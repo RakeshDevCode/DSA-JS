@@ -1,7 +1,7 @@
 # JavaScript Data Structures & Algorithms Basic to Advanced 
 
 **1. Write a function to find a number in a Array and if not found in array then return -1?**
-```
+
 <details>
 	<summary><b>View Answer</b></summary>
 ```javascript
