@@ -112,26 +112,31 @@ console.log("Smallest no from the array:",result);
 </details>
 ```
 
-**. Write a function that return Largest no in the Array?**
+**. Write a function that return Second Largest no in the Array?**
 
 <details>
 	<summary><b>View Answer</b></summary>
 ```
   let SecondLargestNumber = (arr) => {
-    let largest = arr[0];
-    let secondLargest=arr[0];
-    for (let i = 0; i < arr.length; i++) {
-      if (arr[i] > largest) {
-        secondLargest=largest;
-        largest = arr[i];
-      }
-    }
-    return secondLargest;
-  };
+  if (arr.length < 2 || arr.length < 1 ) return "No second largest.....";
 
-  let arr = [99,3, 4, 5, 6, 7, 8, 9, 10, -5, -10, 11,50,100,101];
-  let result=SecondLargestNumber(arr);
-  console.log(result);
+  let largest = -Infinity;
+  let secondLargest = -Infinity;
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > largest) {
+      secondLargest = largest;
+      largest = arr[i];
+    } else if (arr[i] > secondLargest && arr[i] !== largest) {
+      secondLargest = arr[i];
+    }
+  }
+  return secondLargest === -Infinity ? "No second Largest" : secondLargest;
+};
+
+let arr = [1000,500,5,44,545,45,101,8,99,100,550,551];
+let result = SecondLargestNumber(arr);
+console.log(result);
+
 </details>
 ```
 
