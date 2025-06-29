@@ -1,6 +1,6 @@
 # JavaScript Data Structures & Algorithms Basic to Advanced 
 
-**1. Write a function to find a number in a Array and if not found in array then return -1?**
+**. Write a function to find a number in a Array and if not found in array then return -1?**
 
 <details>
 	<summary><b>View Answer</b></summary>
@@ -17,9 +17,10 @@ return -1;
 
 let arr=[2,3,4,5,6,7,8,9,10];
 console.log(searchElement(arr,77));
-</details> ```
+</details> 
+```
 
-**1. // Write a function that returns the even negative numbers in array -1?**
+**. // Write a function that returns the even negative numbers in array ?**
 
 
 <details>
@@ -39,9 +40,10 @@ arr = [1, 3, 4, 6, -4, -6, 7, -8, 66, -77, -90, -33, -87];
 let result = negatiuveNumbers(arr);
 console.log("Negative values", result.negatives);
 console.log("total no:", result.count);
-<details>'''
+<details>
+```
 
-**1. Write a function that returns the even negative numbers in array and sum of that number?**
+**. Write a function that returns the even negative numbers in array and sum of that number?**
 <details>
 	<summary><b>View Answer</b></summary>
 ```
@@ -51,14 +53,13 @@ console.log("Negative values", result);
 console.log("Negative values", result.length);
 let total=result.reduce((sum,count)=>sum+count);
 console.log("Total sum of -negative values", total);
-<details>'''
+<details>
+```
 
-**1. Write  a function that return Largest no in the Array?**
+**. Write  a function that return Largest no in the Array?**
 <details>
 	<summary><b>View Answer</b></summary>
 ```
-
-
 let largestNumber = (arr) => {
   let largest = arr[0];
   for (let i = 0; i < arr.length; i++) {
@@ -71,7 +72,8 @@ let largestNumber = (arr) => {
 
 let arr = [3, 4, 5, 6, 7, 8, 9, 10, -5, -10, 11, 100];
 largestNumber(arr);
-<details>'''
+<details>
+```
 
 **. code**
 <details>
