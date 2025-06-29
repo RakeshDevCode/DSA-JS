@@ -4,8 +4,8 @@
 ```
 <details>
 	<summary><b>View Answer</b></summary>
-<ul>
-Answer: 
+```javascript
+
 let searchElement=(arr,num)=>{
 for(let i=0;i<arr.length;i++)
 { if(num===arr[i]){
@@ -17,8 +17,8 @@ return -1;
 
 let arr=[2,3,4,5,6,7,8,9,10];
 console.log(searchElement(arr,77));
-</ul>
-</details>
+</details> ```
+
 
 
      
