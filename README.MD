@@ -1,5 +1,11 @@
-# // #Write a function to find a number in a Array and if not found in array then return -1 
+# JavaScript Data Structures & Algorithms Basic to Advanced 
 
+**1. Write a function to find a number in a Array and if not found in array then return -1?**
+```
+<details>
+	<summary><b>View Answer</b></summary>
+<ul>
+Answer: 
 let searchElement=(arr,num)=>{
 for(let i=0;i<arr.length;i++)
 { if(num===arr[i]){
@@ -11,6 +17,10 @@ return -1;
 
 let arr=[2,3,4,5,6,7,8,9,10];
 console.log(searchElement(arr,77));
+</ul>
+</details>
+
+
      
 // Write a function that returns the even negative numbers in array
 
@@ -53,19 +63,3 @@ let largestNumber = (arr) => {
 let arr = [3, 4, 5, 6, 7, 8, 9, 10, -5, -10, 11, 100];
 largestNumber(arr);
 
-# JavaScript-100-objective-based-questions
-
-
-**1. Can we connect JavaScript Directly with Actual Database. can you give reason of it ?**
-```js
-a) Yes;
-b) No;
-c) Sometime;
-d) Some Database
-```
-<details>
-	<summary><b>View Answer</b></summary>
-<ul>
-Answer: b) No
-</ul>
-</details>
