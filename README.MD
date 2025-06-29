@@ -76,11 +76,67 @@ let largestNumber = (arr) => {
 let arr = [3, 4, 5, 6, 7, 8, 9, 10, -5, -10, 11, 100];
 largestNumber(arr);
 
+//second method by filter 
+
+let largestNumber = (arr) => {
+  // Filter the array to find the element that is greater than or equal to all others
+  let result = arr.filter(num => arr.every(x => num >= x));
+  return result[0]; // The first (and only) element is the largest
+};
+
+let arr = [3, 4, 5, 6, 7, 8, 9, 10, -5, -10, 11, 100];
+let result = largestNumber(arr);
+console.log(result); // Output: 100
+
 </details>
 ```
 
-**. code**
+**. Write a function to find Smallest no in Array?**
 
 <details>
 	<summary><b>View Answer</b></summary>
 ```
+let smallestNumber= (arr)=>{
+let smallest=Infinity;
+for(let i=0;i<arr.length;i++){
+  if(arr[i]<smallest){
+    smallest=arr[i];
+  }
+}
+return smallest;
+}
+
+let arr=[1,3,-3,5,7,-20,44,20,33,55,-100];
+let result=smallestNumber(arr);
+console.log("Smallest no from the array:",result);
+</details>
+```
+
+**. Write a function that return Largest no in the Array?**
+
+<details>
+	<summary><b>View Answer</b></summary>
+```
+  let SecondLargestNumber = (arr) => {
+    let largest = arr[0];
+    let secondLargest=arr[0];
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] > largest) {
+        secondLargest=largest;
+        largest = arr[i];
+      }
+    }
+    return secondLargest;
+  };
+
+  let arr = [99,3, 4, 5, 6, 7, 8, 9, 10, -5, -10, 11,50,100,101];
+  let result=SecondLargestNumber(arr);
+  console.log(result);
+</details>
+```
+
+
+
+
+
+
