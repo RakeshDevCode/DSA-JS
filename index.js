@@ -1,19 +1,19 @@
-let SecondLargestNumber = (arr) => {
-  if (arr.length < 2 || arr.length < 1 ) return "No second largest.....";
+// write code for  below output
+//      1
+//     12
+//    123
+//   1234
+//  12345
+// 123456
 
-  let largest = -Infinity;
-  let secondLargest = -Infinity;
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] > largest) {
-      secondLargest = largest;
-      largest = arr[i];
-    } else if (arr[i] > secondLargest && arr[i] !== largest) {
-      secondLargest = arr[i];
-    }
+let n = 6;
+for (let i = 1; i <= n; i++) {
+  let row = "";
+  for (let j = 1; j <= n - i; j++) {
+    row += " ";
   }
-  return secondLargest === -Infinity ? "No second Largest" : secondLargest;
-};
-
-let arr = [];
-let result = SecondLargestNumber(arr);
-console.log(result);
+  for (let k = 1; k <= i; k++) {
+    row += k;
+  }
+  console.log(row);
+}
